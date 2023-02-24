@@ -1,9 +1,16 @@
-body{
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 
+
 }
-header{
+
+.presentacion{
+    font-size: medium;
+}
+
+
+header {
     height: 65px;
     background-color: #a200ff;
     color: white;
@@ -12,40 +19,49 @@ header{
     padding-left: 25px;
 }
 
-.uno{
+.uno {
     width: 100%;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(45deg,#a200ff,#a200ff,green,black);
+    background: linear-gradient(45deg, #a200ff, #a200ff, green, black);
     background-size: 400% 400%;
     position: relative;
     animation: cambiar 10s ease-in-out infinite;
 }
-@keyframes cambiar{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 /*boton de musica*/
-.button-container{
+.button-container {
     width: 100%;
     position: center;
-    height: 45px; 
+    height: 45px;
     padding-left: 220px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
-    background-color: #841a8a; 
-    border-color: #c946fd; 
+    background-color: #841a8a;
+    border-color: #c946fd;
 
 }
 
 
 /***********************/
 
-.caja-central{
+.caja-central {
     margin-top: 10%;
     width: 50%;
     display: flex;
@@ -54,7 +70,8 @@ header{
     overflow: hidden;
     height: 50%;
 }
-.caja-cara{
+
+.caja-cara {
     background-image: url("imagen/imagendefondo.jpg");
     background-size: cover;
     display: flex;
@@ -64,7 +81,8 @@ header{
     background-color: #424242;
     /*border-radius: 5px 10px 15px 20px; */
 }
-.cara{
+
+.cara {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -76,7 +94,8 @@ header{
     border-radius: 100px 100px 100px 100px;
 
 }
-.caja-presentacion{
+
+.caja-presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +105,7 @@ header{
     padding: 80px;
 }
 
-.dos{
+.dos {
     background-color: #F2F2F2;
     height: 700px;
     display: flex;
@@ -97,20 +116,27 @@ header{
     padding-left: 20%;
     padding-right: 20%;
 }
-.aptitudes{
+
+.presentacion3{
+    font-size: large;
+}
+
+
+.aptitudes {
     width: 50%;
 }
-.tech-list{
+
+.tech-list {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.tech{
+.tech {
     height: 90px;
 }
 
-.tres{
+.tres {
     background-color: #a200ff;
     height: 600px;
     display: flex;
@@ -120,32 +146,37 @@ header{
     color: #F2F2F2;
 
 }
-.proyectos{
+
+.proyectos {
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-.card{
+
+.card {
     text-align: center;
     width: 30%;
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card a, footer a {
+
+.card a,
+footer a {
     color: white;
 }
 
-.red-social{
+.red-social {
     height: 60px;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
 
-footer{
+footer {
     background-color: #ebcbf1;
     display: flex;
     flex-direction: column;
@@ -154,186 +185,194 @@ footer{
     color: #4b2b43;
     height: 250px;
 
-    
+
 }
-.contacto{
+
+.contacto {
     width: 30%;
     display: flex;
     justify-content: center;
 }
 
 @media (max-width: 1000px) {
-    .caja-central{
+    .caja-central {
         width: 90%;
         height: 70%;
         flex-direction: column;
     }
-    .caja-cara{
+
+    .caja-cara {
         width: 100%;
         height: 50%;
     }
-    .caja-presentacion{
+
+    .caja-presentacion {
         width: 100%;
         height: 50%;
         align-items: flex-start;
     }
-    .aptitudes{
+
+    .aptitudes {
         width: auto;
     }
-    .dos{
+
+    .dos {
         height: auto;
         padding: 0 10px 10px 10px;
 
     }
-    .tres{
+
+    .tres {
         height: auto;
     }
-    .proyectos{
+
+    .proyectos {
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 20px;
     }
-    .card{
+
+    .card {
         width: 80%;
         margin-top: 20px;
     }
-    .red-social{
+
+    .red-social {
         margin: 0 10px 0 10px;
     }
 }
 
 /***************FORMULARIO**************************/
-/* Importación de fuentes de google fonts */ 
+/* Importación de fuentes de google fonts */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 
-body{
-  height: 100%; 
-  font-family: 'Noto Sans', sans-serif;
-  background-color: #ab4493; 
+body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ab4493;
 }
 
 
-.contact_form{  
-  width: 460px; 
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;  
-  padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
 }
 
 
-input{
-  background-color: #fbfbfb; 
-  width: 408px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #ab4493; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 
-textarea{
-  background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #ab4493; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
 
 
-label{
-  display: block; 
-  float: center;  
+label {
+    display: block;
+    float: center;
 }
 
 
-button{
-  height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
-  text-transform: uppercase;
-  background-color: #ab4493; 
-  border-color: #ab4493; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
-  cursor: pointer;
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #ab4493;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
 }
 
 
-button p{
-  color: #fff; 
+button p {
+    color: #fff;
 }
 
 
-span{
-  color: #ab4493; 
+span {
+    color: #ab4493;
 }
 
 
-.aviso{
-  font-size: 13px;  
-  color: #0e0e0e;  
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
 }
 
 
-h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
-  color: #ab4493;
+h1 {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: #ab4493;
 }
 
 
-h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
 }
 
 
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
+p {
+    font-size: 14px;
+    color: #0e0e0e;
 }
 
 
 ::-webkit-input-placeholder {
- color: #a8a8a8;
+    color: #a8a8a8;
 }
 
 
 ::-webkit-textarea-placeholder {
- color: #a8a8a8;
+    color: #a8a8a8;
 }
 
 
-.formulario input:focus{
-  outline:0;
-  border: 1px solid #97d848;
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
 }
 
 
-.formulario textarea:focus{
-  outline:0;
-  border: 1px solid #97d848;
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
 }
-

@@ -1,8 +1,8 @@
 let sound = new Audio("./audio/ambiente.mp3");
-playBtn.addEventListener("click", ()=>{
+playBtn.addEventListener("click", () => {
     sound.play();
 });
 
-pauseBtn.addEventListener("click", ()=>{
+pauseBtn.addEventListener("click", () => {
     sound.pause();
 });
