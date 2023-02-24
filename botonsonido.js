@@ -1,4 +1,8 @@
-const button = document.createElement(button);
-button.typy = "button";
-button.innerText= "Reproducir musica";
-document.body.appendChild(button);
+let sound = new Audio("./audio/ambiente.mp3");
+playBtn.addEventListener("click", ()=>{
+    sound.play();
+});
+
+pauseBtn.addEventListener("click", ()=>{
+    sound.pause();
+});
